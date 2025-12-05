@@ -8,5 +8,9 @@ public class stringMethods{
         String str1 = str.toLowerCase();
         System.out.println(str1);
 
+        str1 = str.toUpperCase();
+        System.out.println(str1);
+
+
     }
 }
