@@ -1,3 +1,5 @@
+import java.nio.charset.StandardCharsets;
+
 public class stringMethods{
     public static void main(String[] args) {
         String str = "Welcome  ";
@@ -15,6 +17,9 @@ public class stringMethods{
         System.out.println(str1);
 
         str1 = str.substring(3);
+        System.out.println(str1);
+
+        str1 = str.substring(3, 6);
         System.out.println(str1);
     }
 }
