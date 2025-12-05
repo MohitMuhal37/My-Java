@@ -1,6 +1,6 @@
 public class stringMethods{
     public static void main(String[] args) {
-        String str = "  Welcome";
+        String str = "Welcome  ";
 
         int l = str.length();
         System.out.println(l);
@@ -14,5 +14,7 @@ public class stringMethods{
         str1 = str.trim();
         System.out.println(str1);
 
+        str1 = str.substring(3);
+        System.out.println(str1);
     }
 }
