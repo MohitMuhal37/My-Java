@@ -21,5 +21,8 @@ public class stringMethods{
 
         str1 = str.substring(3, 6);
         System.out.println(str1);
+
+        str1 = str.replace('c', 'f');
+        System.out.println(str1);
     }
 }
