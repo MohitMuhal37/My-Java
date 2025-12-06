@@ -3,6 +3,9 @@ import java.nio.charset.StandardCharsets;
 public class stringMethods{
     public static void main(String[] args) {
         String str = "Welcome  ";
+        String str2 = "Java";
+        String str3 = "java";
+        String str4 = "pava";
 
         int l = str.length();
         System.out.println(l);
@@ -29,6 +32,9 @@ public class stringMethods{
         System.out.println(str1.indexOf('f'));
         System.out.println(str1.lastIndexOf('e'));
 
+        System.out.println(str2.equals(str3));
+        System.out.println(str2.equalsIgnoreCase(str3));
+        System.out.println(str4.compareTo(str3));
 
     }
 }
