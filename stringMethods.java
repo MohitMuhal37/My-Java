@@ -5,7 +5,7 @@ public class stringMethods{
         String str = "Welcome  ";
         String str2 = "Java";
         String str3 = "java";
-        String str4 = "pava";
+        String str4 = "python";
 
         int l = str.length();
         System.out.println(l);
