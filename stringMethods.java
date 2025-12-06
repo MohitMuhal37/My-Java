@@ -24,5 +24,11 @@ public class stringMethods{
 
         str1 = str.replace('c', 'f');
         System.out.println(str1);
+
+        System.out.println(str1.charAt(5));
+        System.out.println(str1.indexOf('f'));
+        System.out.println(str1.lastIndexOf('e'));
+
+
     }
 }
