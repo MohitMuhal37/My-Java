@@ -1,7 +1,7 @@
 public class stringSymbols{
     public static void main(String[] args) {
         String str1 = "a";
-        String str2 = "abcde";
+        String str2 = "john@gmail.com";
 
         System.out.println(str1.matches("abc"));
         System.out.println(str1.matches("[^abc]"));
@@ -15,6 +15,8 @@ public class stringSymbols{
         System.out.println(str1.matches("\\S"));
         System.out.println();
         System.out.println(str2.matches(".*"));
-        System.out.println(str2.matches(".*"));
+        System.out.println(str2.matches("[abcde]*"));
+        System.out.println(str2.matches(".+"));
+        System.out.println(str2.matches("[abc] {3,89}"));
     }
 }
