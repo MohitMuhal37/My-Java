@@ -17,6 +17,6 @@ public class stringSymbols{
         System.out.println(str2.matches(".*"));
         System.out.println(str2.matches("[abcde]*"));
         System.out.println(str2.matches(".+"));
-        System.out.println(str2.matches("[abc] {3,89}"));
+        System.out.println(str2.matches("\\w*gmail.*"));
     }
 }
