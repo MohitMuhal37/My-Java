@@ -10,8 +10,8 @@ class loopPractice{
 //            System.out.println(val);
 //        }
 
-        for(int i = 0; i <= 10; i++){
-            sum = num + i;
+        for(int i = 0; i <= num; i++){
+            sum = sum + i;
             System.out.println(sum);
         }
     }
