@@ -8,6 +8,7 @@ public class displayDigitloop {
             int r = num % 10;
             num = num / 10;
             System.out.print(r+" ");
+//            System.out.println(num+" ");
         }
     }
 }
