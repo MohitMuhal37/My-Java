@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class numberinString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Number");
+        System.out.print("Enter Number :- ");
         int num = sc.nextInt();
         int r;
         String str = "";
@@ -11,40 +11,42 @@ public class numberinString {
             r = num % 10;
             num = num / 10;
             str += r;
+            System.out.print(r);
         }
+        System.out.println();
         char c;
-        for (int i = str.length()-1; i>0; i--){
+        for (int i = str.length()-1; i>=0; i--){
            c = str.charAt(i);
            switch(c){
                case '0' :
-                   System.out.println("zero ");
+                   System.out.print("zero ");
                    break;
                case '1' :
-                   System.out.println("one ");
+                   System.out.print("one ");
                    break;
                case '2' :
-                   System.out.println("two ");
+                   System.out.print("two ");
                    break;
                case '3' :
-                   System.out.println("three ");
+                   System.out.print("three ");
                    break;
                case '4' :
-                   System.out.println("four ");
+                   System.out.print("four ");
                    break;
                case '5' :
-                   System.out.println("five ");
+                   System.out.print("five ");
                    break;
                case '6' :
-                   System.out.println("six ");
+                   System.out.print("six ");
                    break;
                case '7' :
-                   System.out.println("seven ");
+                   System.out.print("seven ");
                    break;
                case '8' :
-                   System.out.println("eight ");
+                   System.out.print("eight ");
                    break;
                case '9' :
-                   System.out.println("nine ");
+                   System.out.print("nine ");
                    break;
             }
         }
