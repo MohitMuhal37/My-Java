@@ -12,5 +12,10 @@ public class array {
         for(int i = A.length-1; i >= 0; i--){
             System.out.print(A[i]+" ");
         }
+        System.out.println();
+//        traverse using foreach loop
+        for(int x : A) {
+            System.out.print(x+" ");
+        }
     }
 }
