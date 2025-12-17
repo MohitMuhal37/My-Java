@@ -42,6 +42,9 @@ public class pattern1 {
                     System.out.print("  ");
                 }
             }
+            for(int k = 2; k <= i; k++){
+                System.out.print("* ");
+            }
             System.out.println();
         }
     }
