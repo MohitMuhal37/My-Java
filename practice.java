@@ -2,18 +2,15 @@ import java.util.Scanner;
 
 public class practice {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        //count digit
-        System.out.print("Enter a number :- ");
-        int num = sc.nextInt();
-        int count = 0;
-        while(num > 0){
-//            int r = num % 10;
-            num = num / 10;
-//            System.out.print(r + " ");
-//            System.out.println(num);
-            count++;
+      // find sum
+        int arr[] = {12, 32, 443, 54, 5, 45, 6, 90, 67};
+        int key = 45;
+        for(int i = 0; i < arr.length; i++){
+            if (arr[i] == key){
+                System.out.print(i);
+                System.exit(0);
+            }
         }
-        System.out.println(count);
+            System.out.println("not valid");
     }
 }
