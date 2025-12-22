@@ -9,10 +9,10 @@ class Employee{
     String companyMail;
     double income;
 
-   public void showDetails(){
-       System.out.print(" Employee id is = "+id+"\n Age = "+age+"\n Name is = "+name+
+   public String toString(){
+       return " Employee id is = "+id+"\n Age = "+age+"\n Name is = "+name+
                "\n LastName = "+lastName+"\n Gender is = "+ gender+ "\n Branch is = "+branch+
-               "\n CompanyMail = "+companyMail+ "\n Income is = "+income);
+               "\n CompanyMail = "+companyMail+ "\n Income is = "+income;
     }
 }
 
@@ -27,6 +27,6 @@ public class employeClass {
     emp.branch = "Webwork";
     emp.companyMail = "max@hotmail.com";
     emp.income = 55000.65;
-    emp.showDetails();
+        System.out.print(emp);
     }
 }
