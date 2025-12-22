@@ -21,10 +21,10 @@ class Employees{
         income = nIncome;
     }
 
-    public String toString(){
-        return " Employee Name is = "+name+"\n Last Name = "+lastName+"\n Id is = "+id+
+    public void showDetail(){
+        System.out.println(" Employee Name is = "+name+"\n Last Name = "+lastName+"\n Id is = "+id+
                 "\n Age = "+age+"\n Gender is = "+ gender+ "\n Branch is = "+branch+
-                "\n CompanyMail = "+companyMail+ "\n Income is = "+income;
+                "\n CompanyMail = "+companyMail+ "\n Income is = "+income);
     }
 }
 
@@ -33,6 +33,13 @@ public class dataHiding {
     Employees emp = new Employees();
     emp.setData("Mohit","Muhal",105,21,'M',"Backend Management",
             "MohitMuhal15122003@gmail.com",559897.00);
-        System.out.print(emp);
+    //calling Detail function
+    emp.showDetail();
+
+    // Create new Employee Detail
+        emp.setData("Rohit","Muhal",109,22,'M',"FrontEnd Management",
+                "RohitMuhal15122003@gmail.com",859897.00);
+        //calling Detail function
+        emp.showDetail();
     }
 }
