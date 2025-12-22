@@ -10,9 +10,9 @@ class Employee{
     double income;
 
    public void showDetails(){
-       System.out.print("Employee id is = "+id+", Age = "+age+", Name is = "+name+
-               ", LastName = "+lastName+", Gender is = "+ gender+ ", Branch is = "+branch+
-               ", CompanyMail = "+companyMail+ ", Income is = "+income);
+       System.out.print(" Employee id is = "+id+"\n Age = "+age+"\n Name is = "+name+
+               "\n LastName = "+lastName+"\n Gender is = "+ gender+ "\n Branch is = "+branch+
+               "\n CompanyMail = "+companyMail+ "\n Income is = "+income);
     }
 }
 
