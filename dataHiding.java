@@ -30,7 +30,9 @@ class Employees{
 
 public class dataHiding {
     public static void main(String[] args){
-
+    Employees emp = new Employees();
+    emp.setData("Mohit","Muhal",105,21,'M',"Backend Management",
+            "MohitMuhal15122003@gmail.com",559897.00);
+        System.out.print(emp);
     }
-
 }
