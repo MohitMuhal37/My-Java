@@ -10,8 +10,19 @@ class Circle2{
     }
 }
 
+class Cylinder extends  Circle2{
+    public double height;
+    public double volume(){
+        return area() * height;
+    }
+}
 public class basicInheritance {
     public static void main(String[] args) {
+    Cylinder c = new Cylinder();
+    c.radius = 7;
+    c.height = 10;
 
+        System.out.println("volume = "+c.volume());
+        System.out.print("area = "+c.area());
     }
 }
