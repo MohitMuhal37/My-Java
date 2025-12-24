@@ -1,9 +1,9 @@
 class Rectangle1{
     int length;
     int breadth;
-    public Rectangle1(int l, int b){
-        length = l;
-        breadth = b;
+    public Rectangle1(int length, int breadth){
+        this.length = length;
+        this.breadth = breadth;
     }
 
     public void display(){
