@@ -10,7 +10,7 @@ class child extends Parent{
     }
 }
 
-class GrandChild{
+class GrandChild extends child{
     public GrandChild(){
         System.out.println("GrandChild Class");
     }
