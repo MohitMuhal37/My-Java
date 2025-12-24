@@ -26,6 +26,7 @@ class child1 extends Parent1{
 
 public class paranconstructInheritance {
     public static void main(String[] args) {
+        child1 ch1 = new child1();
         child1 ch = new child1(10,5);
     }
 }
