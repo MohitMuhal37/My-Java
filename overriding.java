@@ -5,6 +5,7 @@ class Super{
 }
 
 class sub extends Super{
+    @Override
     public void display(){
         System.out.println("Hello again");
     }
