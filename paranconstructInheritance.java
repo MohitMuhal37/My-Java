@@ -8,7 +8,7 @@ class Parent1{
     }
 }
 
-class child1{
+class child1 extends Parent1{
     public child1(){
         System.out.println("Non Param Child");
     }
