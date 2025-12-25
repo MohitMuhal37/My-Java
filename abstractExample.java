@@ -22,6 +22,8 @@ class myHospital extends Hospital{
 
 public class abstractExample {
     public static void main(String[] args) {
-
+    Hospital h1 = new myHospital();
+    h1.admit();
+    h1.opd();
     }
 }
