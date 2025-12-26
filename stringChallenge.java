@@ -10,7 +10,9 @@ public class stringChallenge{
         System.out.println("Username = " + username);
         System.out.println("domain = " + domain);
 
-        
 
+
+
+        
     }
 }
