@@ -40,5 +40,6 @@ public class abstractExample1 {
     Shape s1 = new rectangle(12.98, 34.65);
         System.out.println("Rectangle Area is :- "+s1.area());
         System.out.println("Rectangle Perimeter is :- "+s1.perimeter());
+
     }
 }
