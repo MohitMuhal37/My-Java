@@ -18,5 +18,7 @@ public class apSeries {
                 fnum = fnum + diff;
                 i++;
         }
+
+
     }
 }
