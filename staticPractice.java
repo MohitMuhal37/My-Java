@@ -5,7 +5,7 @@ class HondaCity
 
     static double roadPrice(String city)
     {
-        switch (city)
+        switch(city)
         {
             case "delhi":
                 return price + price * 0.1;
