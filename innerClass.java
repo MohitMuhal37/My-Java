@@ -1,5 +1,5 @@
 class outer{
-    int x = 10;
+    static int x = 10;
 
     class inner{
         int y = 20;
