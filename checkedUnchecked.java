@@ -1,14 +1,23 @@
 import java.lang.Exception;
 import java.io.*;
 
+
+
+class lowbalanceexcep extends Exception{
+        public String toString(){
+            return "Balance Should not be less than 5000";
+        }
+}
+
 public class checkedUnchecked {
 
     static void fun1(){
         try {
-           FileInputStream fi = new FileInputStream("My.txt");
+           throw new lowbalanceexcep();
+//           FileInputStream fi = new FileInputStream("My.txt");
         }
-        catch (Exception e){
-            System.out.println(e.getMessage());
+        catch (lowbalanceexcep e){
+            System.out.println(e);
         }
     }
     static void fun2(){
