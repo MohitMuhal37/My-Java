@@ -10,7 +10,8 @@ public class exceptionDemo {
         }
         catch(ArithmeticException e)
         {
-            System.out.print("Number is Not Divisible by zero  = "+e);
+            System.out.println("Number is Not Divisible by zero  = "+e);
         }
+        System.out.print("Program terminated Properly");
     }
 }
