@@ -1,10 +1,11 @@
 import java.lang.Exception;
+import java.io.*;
 
 public class checkedUnchecked {
 
     static void fun1(){
         try {
-            System.out.println(10 / 0);
+           FileInputStream fi = new FileInputStream("My.txt");
         }
         catch (Exception e){
             System.out.println(e.getMessage());
