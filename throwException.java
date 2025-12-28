@@ -4,7 +4,6 @@ public class throwException
     {
         return 10 / 0;
     }
-
     static void meth2()
     {
         meth1();
