@@ -7,7 +7,7 @@ public class checkedUnchecked {
             System.out.println(10 / 0);
         }
         catch (Exception e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
     static void fun2(){
