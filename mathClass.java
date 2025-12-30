@@ -1,5 +1,3 @@
-
-
 public class mathClass {
     public static void main(String[] args) {
 
@@ -49,22 +47,6 @@ public class mathClass {
         
         // System.out.print("Maximum :");
         // System.out.println(Math.max(100, 50));
-        
-        
-        // System.out.print("Tan :");
-        // System.out.println(Math.tan(45*Math.PI/180));
-       
-       
-        // System.out.print("Convert to Radians :");
-        // System.out.println(Math.toRadians(90));
-        
-        // System.out.print("Convert to Degree :");
-        // System.out.println(Math.toDegrees(Math.atan(1)));
-
-        
-        // System.out.print("Convert To Degree :");
-        // System.out.println(StrictMath.toDegrees(StrictMath.tanh(1)));
-
         
         
         // System.out.print("Random :");
