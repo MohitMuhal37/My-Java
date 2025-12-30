@@ -62,6 +62,6 @@ public class mathClass {
         
         
         // System.out.print("Next Float Value :");
-        // System.out.println(Math.nextAfter(12.5, 11));
+        // System.out.println(Math.nextAfter(12.5, 13));
     }
 }
