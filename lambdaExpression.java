@@ -1,3 +1,4 @@
+@FunctionalInterface
 interface lambda
 {
     public void show();
