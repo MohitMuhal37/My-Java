@@ -1,3 +1,5 @@
+package javaDemoBook;
+
 /** @author Mohit Muhal
  *  @version 25
  *  @since 2025
@@ -11,9 +13,10 @@
  * Class for Library Book
  */
 
-
 public class book
 { 
+        
+    
     
     /**
      * @value 10 default value

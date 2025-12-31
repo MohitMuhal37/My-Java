@@ -1,7 +1,0 @@
-{
-    
-  "editor.fontFamily": "JetBrains Mono, Consolas, monospace",
-  "editor.fontSize": 16,
-  "editor.fontLigatures": true,
-  "java.debug.settings.onBuildFailureProceed": true
-}
