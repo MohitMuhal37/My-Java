@@ -5,9 +5,15 @@ interface myLambda
 
 class demo
 {
-   myLambda l = ()->{System.out.println("Hello");
+    int count = 0;
+    public void meth2(){
+        // int count = 0;
+   myLambda l = ()->{System.out.println("Hello"+count++); //can acces lambda expression
     System.out.println("Bye");
+
    };
+    l.meth1();
+  }
 }
 
 public class lambdaExpression1 {
