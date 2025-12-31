@@ -1,13 +1,13 @@
 @FunctionalInterface
 interface lambda
 {
-    public void show();
+    public void show(String s, int age);
 }
 
 public class lambdaExpression
 {
     public static void main(String[] args) {
-        lambda l = ()->{System.out.println("Hello All");};
-        l.show();
+        lambda l = (s, a)->{System.out.println(s+" "+a);};
+        l.show(" Max ",22);
     }
 }
