@@ -1,5 +1,7 @@
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
 
 class Producer extends Thread{
     OutputStream os;
@@ -46,7 +48,12 @@ class Consumer extends Thread{
 }
 
 public class pipeDemo {
-    public static void main(String[] args) {
-        
+    public static void main(String[] args)throws Exception {
+        PipedInputStream pis = new PipedInputStream();
+        PipedOutputStream pos = new PipedOutputStream();
+
+        pis.connect(pos);
+        Producer p = new Producer(pos);
+        Consumer c = new Consumer(pis);
     }
 }
