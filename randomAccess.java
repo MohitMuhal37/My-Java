@@ -13,6 +13,9 @@ public class randomAccess {
         System.out.println((char)rsf.read());
         rsf.write('w');
         System.out.println((char)rsf.read());
+        rsf.skipBytes(4);
+        System.out.println((char)rsf.read());
+        System.out.println(rsf.getFilePointer());
     }catch(FileNotFoundException e){}
     catch(IOException e){}
  }
