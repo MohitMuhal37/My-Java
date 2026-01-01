@@ -18,7 +18,7 @@ class Producer extends Thread{
             try{
             os.write(count);
             os.flush();
-
+            Thread.sleep(10);
             System.out.println("Producer is Producing "+count);
             count++;
             }catch(Exception e){}
@@ -55,5 +55,8 @@ public class pipeDemo {
         pis.connect(pos);
         Producer p = new Producer(pos);
         Consumer c = new Consumer(pis);
+
+        p.start();
+        c.start();
     }
 }
