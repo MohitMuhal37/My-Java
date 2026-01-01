@@ -4,9 +4,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.SequenceInputStream;
 
-public class copyFile {
+public class copytwoFIleinOne {
     public static void main(String[] args) {
-        try
+         try
         {
         FileInputStream fis =  new FileInputStream("src1.txt");
         FileInputStream fis1 =  new FileInputStream("src2.txt");
@@ -15,14 +15,8 @@ public class copyFile {
 
         SequenceInputStream sq = new SequenceInputStream(fis, fis1);
         int x;
-        while((x = fis.read())!= -1){
-            System.out.println((char)x);
-            if(x >= 65 && x <= 90){
-                fos.write(x+32);
-            }
-            else{
-                fos.write(x);
-            }
+        while((x = sq.read())!= -1){
+           fos.write(x);
         }
     }catch(FileNotFoundException e){
         System.out.println(e);
@@ -30,5 +24,5 @@ public class copyFile {
     catch(IOException e){
         System.out.println(e);
     }
-}
+    }
 }
