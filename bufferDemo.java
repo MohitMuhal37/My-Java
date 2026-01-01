@@ -12,6 +12,9 @@ public class bufferDemo {
     while ((x = bis.read())!= -1) {
         System.out.print((char)x);
     }
+    System.out.println();
+    System.out.println(bis.markSupported());
+    System.out.println(fis.markSupported());
     }catch(FileNotFoundException e){}
     catch(IOException e){}
 }
