@@ -7,7 +7,6 @@ package javaDemoBook;
 
 /**
  * 
- * @author abdulbari
  * 
  * Class for Library Book
  */
