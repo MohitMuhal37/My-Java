@@ -8,7 +8,10 @@ public class fileOutput {
     {
     FileOutputStream fos  = new FileOutputStream( "c:/Users/HP/OneDrive/Desktop/Demo/Test.txt");
     String str = "Hello I am here";
-    fos.write(str.getBytes());
+    byte b[] = str.getBytes();
+    
+    for(byte x : b)
+        fos.write(x);
     fos.close();
     }
     catch(FileNotFoundException e){
