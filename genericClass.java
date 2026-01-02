@@ -23,6 +23,10 @@ public void display(){
 }
 }
 
+
+class MyArray2 extends MyArray<Integer>{
+
+}
 public class genericClass
  {
     public static void main(String[] args) {
@@ -31,6 +35,7 @@ public class genericClass
         System.out.println(i.getData());
 
         MyArray<Integer> it = new MyArray<>();
+        MyArray2 il = new MyArray2();
         it.append(12);
         it.append(13);
         it.append(11);
