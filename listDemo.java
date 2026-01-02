@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class listDemo {
     public static void main(String[] args) {
@@ -23,11 +24,12 @@ public class listDemo {
         //     System.out.print(al.get(i)+" ");
         // }
        
-        
-        Iterator<Integer> it = al.iterator();
-
-        while(it.hasNext()){
-            System.out.print(it.next()+" ");
+        Iterator<Integer> i = al.iterator();
+        while(i.hasNext()){
+            System.out.println(i.next());
+        }
+        for(ListIterator<Integer> it = al.listIterator();it.hasPrevious();){
+            System.out.print(it.previous()+" ");
         }
     }
 }
