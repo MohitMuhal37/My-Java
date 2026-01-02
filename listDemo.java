@@ -9,6 +9,11 @@ public class listDemo {
         al.add(3);
         al.add(67);
         al.addAll(1,al1);
+        System.out.println(al.contains(50));
+        System.out.println(al.equals(al1));
+        System.out.println(al.get(4));
+        System.out.println(al.indexOf(45));
+        al.add(5,45);
         System.out.println(al);
     }
 }
