@@ -8,8 +8,9 @@ class Data<T>{
         return obj;
     }
 }
+
 @SuppressWarnings("uncheked")
-class MyArray<T>{
+class MyArray<T extends Number>{
 T A[] = (T[]) new Object[10];
 int length = 0;
 
