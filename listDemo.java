@@ -14,6 +14,14 @@ public class listDemo {
         System.out.println(al.get(4));
         System.out.println(al.indexOf(45));
         al.add(5,45);
-        System.out.println(al);
+        System.out.println(al.reversed());   
+        
+        //Accessin element
+        // for(int i = 0; i < al.size(); i++){
+        //     System.out.print(al.get(i)+" ");
+        // }
+       
+        
+        
     }
 }
