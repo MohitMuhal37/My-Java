@@ -40,7 +40,7 @@ class Consumer extends Thread{
       {
             try{
                 x = Is.read();
-            System.out.println("Producer is Consumer "+x);
+            System.out.println("Consumer is Consuming "+x);
             System.out.flush();
             }catch(Exception e){}
         }
