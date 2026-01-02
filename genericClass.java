@@ -30,18 +30,26 @@ class MyArray2 extends MyArray<Integer>{
 }
 public class genericClass
  {
+
+    static <E> void show(E[] list){
+        for(E x:list){
+            System.out.println(x);
+        }
+    }
     public static void main(String[] args) {
         Data<Integer> i = new Data();
         i.setData(10);
         System.out.println(i.getData());
 
-        MyArray<Integer> it = new MyArray<>();
-        MyArray2 il = new MyArray2();
-        it.append(12);
-        it.append(13);
-        it.append(11);
-        it.append(2);
+        // MyArray<Integer> it = new MyArray<>();
+        // MyArray2 il = new MyArray2();
+        // it.append(12);
+        // it.append(13);
+        // it.append(11);
+        // it.append(2);
 
-        it.display();
+        // it.display();
+
+        show(new String[]{"Hi","go","bye"});
     }
 }
