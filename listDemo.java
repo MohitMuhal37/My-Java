@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
+
 public class listDemo {
     public static void main(String[] args) {
         ArrayList<Integer> al = new ArrayList<>();
@@ -22,6 +24,10 @@ public class listDemo {
         // }
        
         
-        
+        Iterator<Integer> it = al.iterator();
+
+        while(it.hasNext()){
+            System.out.print(it.next()+" ");
+        }
     }
 }
