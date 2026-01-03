@@ -1,10 +1,11 @@
+import java.util.*;
 import java.util.LinkedHashMap;
-import java.util.Iterator;
-
 public class linkHashmap{
     public static void main(String[] args) {
         LinkedHashMap<Integer, String> lh = new LinkedHashMap<>(5,.75f,true){
-            
+            protected boolean removeEldestEntry(Map.Entry e){
+                return size()>5;
+            }
         };
         lh.put(0,"1");
         lh.put(1,"2");
