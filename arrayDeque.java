@@ -11,6 +11,8 @@ public class arrayDeque {
         dq.offerFirst(109);
         dq.offerLast(24);
 
+        dq.pollFirst();
+
         Iterator<Integer> iq = dq.iterator();
         while (iq.hasNext()) {
             System.out.println(iq.next());
