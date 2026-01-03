@@ -11,9 +11,11 @@ public class priorityQueue {
        p.offer(38); 
        p.offer(68); 
 
-       Iterator<Integer> pq = p.iterator();
-       while(pq.hasNext()){
-        System.out.print(pq.next()+" ");
+    //    Iterator<Integer> pq = p.iterator();
+    //    while(pq.hasNext()){
+    //     System.out.print(pq.next()+" ");
+
+        p.forEach((x)->System.out.println(x+" "));
        }
     }
-}
+
