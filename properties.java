@@ -11,7 +11,7 @@ public class properties {
         p.setProperty("Model", "N305");
 
         try{
-             p.store(new FileOutputStream("src5.xml"), "Laptop");
+             p.storeToXML(new FileOutputStream("src5.xml"), "Laptop");
         }catch(IOException e){
             System.out.println(e);
         }
