@@ -3,8 +3,7 @@ import java.io.IOException;
 import java.util.StringTokenizer;
 
 public class stringTokenizer {
-    public static void main(String[] args) {
-       try{
+    public static void main(String[] args)throws Exception {
         FileInputStream fis = new FileInputStream("src4.txt");
         byte b[] = new byte[fis.available()];
         fis.read();
@@ -16,6 +15,5 @@ public class stringTokenizer {
             s = st.nextToken();
             System.out.println(s);
         }
-    }catch(IOException e){}
     }
 }
