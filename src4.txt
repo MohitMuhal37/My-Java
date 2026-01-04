@@ -1,0 +1,6 @@
+#Laptop
+#Sun Jan 04 11:36:53 IST 2026
+Brand=HP
+Model=N305
+Processor=i3
+os=Windows 11
