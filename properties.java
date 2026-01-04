@@ -1,3 +1,4 @@
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
 import java.io.IOException;
@@ -5,15 +6,20 @@ import java.io.IOException;
 public class properties {
     public static void main(String[] args) {
         Properties p = new Properties();
-        p.setProperty("Brand", "HP");
-        p.setProperty("Processor", "i3");
-        p.setProperty("os", "Windows 11");
-        p.setProperty("Model", "N305");
+        // p.setProperty("Brand", "HP");
+        // p.setProperty("Processor", "i3");
+        // p.setProperty("os", "Windows 11");
+        // p.setProperty("Model", "N305");
+
+        // try{
+        //      p.storeToXML(new FileOutputStream("src5.xml"), "Laptop");
+        // }catch(IOException e){
+        //     System.out.println(e);
+        // }
 
         try{
-             p.storeToXML(new FileOutputStream("src5.xml"), "Laptop");
-        }catch(IOException e){
-            System.out.println(e);
-        }
+            p.loadFromXML(new FileInputStream("src5.xml"));
+            System.out.println(p.getProperty("os"));
+        }catch(IOException e){}
     }
 }
