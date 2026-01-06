@@ -9,7 +9,7 @@ public class fibonnachiSeries {
         int next = 1;
         int c, i;
         System.out.print(start + ", " + next + ", ");
-        for(i = 0; i < num - 2; i++){
+        for(i = 0; i < num-2; i++){
             c = start + next;
             start = next;
             next = c;
