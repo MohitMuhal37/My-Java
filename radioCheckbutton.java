@@ -4,12 +4,14 @@ class radiobtn extends Frame implements  ItemListener
 {
     Label l;
     Checkbox c1,c2,c3;
+    CheckboxGroup cbg;
     radiobtn(){
         super("Checkbox Demo");
         l = new Label("Nothing Selected");
-        c1 = new Checkbox("Java");
-        c2 = new Checkbox("Python");
-        c3 = new Checkbox("C#");
+        cbg = new CheckboxGroup();
+        c1 = new Checkbox("Java",false,cbg);
+        c2 = new Checkbox("Python",false,cbg);
+        c3 = new Checkbox("C#",false,cbg);
         c1.addItemListener(this);
         c2.addItemListener(this);
         c3.addItemListener(this);
@@ -30,6 +32,9 @@ class radiobtn extends Frame implements  ItemListener
          if(c3.getState()){
             str = str + " "+ c3.getLabel();
         }
+         if(str.isEmpty()){
+            str = "Nothing selected";
+         }
         l.setText(str);
     }
 }
