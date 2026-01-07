@@ -8,6 +8,7 @@ class MyFrame extends Frame
     MyFrame()
     {
         super("My App");
+        setLayout(new FlowLayout());
         l = new Label("Name");
         tf = new TextField(20);
         b = new Button("Enter");
