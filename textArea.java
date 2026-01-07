@@ -25,6 +25,7 @@ class textAreas extends Frame implements ActionListener
 
     public void actionPerformed(ActionEvent e){
     ta.append(tf.getText());
+        ta.insert(tf.getText(),tf.getCaretPosition());
     }
 }
 
