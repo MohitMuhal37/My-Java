@@ -11,6 +11,7 @@ class Buttons extends Frame implements ActionListener
     super("Button demo");
     l =new Label("    "+count);
     b = new Button("Click me");
+    setLayout(new FlowLayout());
     b.addActionListener(this);
     add(l);
     add(b);
@@ -24,6 +25,8 @@ class Buttons extends Frame implements ActionListener
 }
 public class buttonDemo {
     public static void main(String[] args) {
-        
+        Buttons bt = new Buttons();
+        bt.setSize(400,400);
+        bt.setVisible(true);
     }
 }
