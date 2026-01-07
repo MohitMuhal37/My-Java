@@ -7,15 +7,15 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.stream.Stream;
 
-class Student2 implements Serializable{
+class Student5 implements Serializable{
     int rollno;
     String name;
     String dept;
     transient int t;
 
-    public Student2(){}
+    public Student5(){}
 
-    public Student2(int r, String n, String d){
+    public Student5(int r, String n, String d){
         rollno = r;
         name = n;
         dept = d;
@@ -33,7 +33,7 @@ public class objectSerialization {
         try{
     FileOutputStream fos  = new FileOutputStream("My.txt");
     ObjectOutputStream oos = new ObjectOutputStream(fos);
-    Student2 s1 = new Student2(21,"Max","Cse");
+    Student5 s1 = new Student5(21,"Max","Cse");
     oos.writeObject(s1);
 
      FileInputStream fis  = new FileInputStream("My.txt");

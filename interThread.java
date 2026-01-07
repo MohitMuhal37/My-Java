@@ -1,4 +1,4 @@
-class Mydata
+class Mydata1
 {
     int value = 0;
     boolean flag = true;
@@ -29,11 +29,11 @@ class Mydata
     }
 }
 
-class Producer extends Thread
+class Producer3 extends Thread
 {
-    Mydata data;
+    Mydata1 data;
 
-    public Producer(Mydata d)
+    public Producer3(Mydata1 d)
     {
         data = d;
     }
@@ -49,11 +49,11 @@ class Producer extends Thread
     }
 }
 
-class Consumer extends Thread
+class Consumer3 extends Thread
 {
-    Mydata data;
+    Mydata1 data;
 
-    public Consumer(Mydata d)
+    public Consumer3(Mydata1 d)
     {
         data = d;
     }
@@ -74,9 +74,9 @@ public class interThread
 {
     public static void main(String[] args) 
     {
-        Mydata data = new Mydata();
-        Producer p = new Producer(data);
-        Consumer c = new Consumer(data);
+        Mydata1 data = new Mydata1();
+        Producer3 p = new Producer3(data);
+        Consumer3 c = new Consumer3(data);
         p.start();
         c.start();
     }

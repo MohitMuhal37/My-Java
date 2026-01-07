@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.io.IOException;
 
-class Student{
+class Student2{
     int rollno;
     String name;
     String dept;
@@ -16,7 +16,7 @@ public class printStreamDemo {
         try{
         FileOutputStream fos = new FileOutputStream("My.txt");
         PrintStream ps = new PrintStream(fos);
-        Student s = new Student();
+        Student2 s = new Student2();
         s.name= "Mohit";
         s.rollno = 21;
         s.dept = "cse";

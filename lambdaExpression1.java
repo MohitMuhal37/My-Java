@@ -11,7 +11,7 @@ class uLambda
     }
 }
 
-class demo
+class demo1
 {
     public void meth2(){
     uLambda ul = new uLambda();
@@ -21,7 +21,7 @@ class demo
 
 public class lambdaExpression1 {
     public static void main(String[] args) {
-       demo d = new demo();
+       demo1 d = new demo1();
        d.meth2();
     }
 }

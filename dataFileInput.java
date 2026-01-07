@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-class Student1{
+class Student7{
     int rollno;
     String name;
     String dept;
@@ -15,7 +15,7 @@ public class dataFileInput {
         try{
         FileInputStream fos = new FileInputStream("My.txt");
         DataInputStream dos = new DataInputStream(fos);
-       Student1 s = new Student1();
+       Student7 s = new Student7();
        s.dept = dos.readUTF();
        s.name = dos.readUTF();
        s.rollno = dos.readInt();
