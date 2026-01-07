@@ -14,6 +14,7 @@ class MFrame extends Frame implements TextListener, ActionListener
         l = new Label("No text enter yet");
         l1 = new Label("Enter key is not hit yet");
         tf = new TextField(20);
+        tf.setEchoChar('*');
         tf.addTextListener(this);
         tf.addActionListener(this);
         setLayout((new FlowLayout()));
