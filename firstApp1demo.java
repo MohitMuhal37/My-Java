@@ -1,11 +1,12 @@
 import java.awt.*;
-class MyFrame extends Frame
-{
+
+public class firstApp1demo extends Frame {
+    
     Label l;
     TextField tf;
     Button b;
 
-    MyFrame()
+    firstApp1demo()
     {
         super("My App");
         setLayout(new FlowLayout());
@@ -17,11 +18,8 @@ class MyFrame extends Frame
         add(tf);
         add(b);
     }
-}
-
-public class firstApp1demo {
     public static void main(String[] args) {
-        MyFrame mf = new MyFrame();
+        firstApp1demo mf = new firstApp1demo();
         mf.setSize(300,300);
         mf.setVisible(true);
     }
