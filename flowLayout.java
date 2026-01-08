@@ -21,12 +21,12 @@ class FlowOut extends Frame
 //
 //    setLayout(f);
 
-    add(b,BorderLayout.NORTH);
-    add(b1,BorderLayout.EAST);
-    add(b2,BorderLayout.SOUTH);
-    add(b3,BorderLayout.WEST);
-    add(b4, BorderLayout.CENTER);
-//    add(b5);
+    add(b);
+    add(b1);
+    add(b2);
+    add(b3);
+    add(b4);
+    add(b5);
     }
 }
 
