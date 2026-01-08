@@ -23,16 +23,21 @@ class keyEvents extends Frame implements KeyListener
         add(l1);
         add(l2);
         add(l3);
+        addKeyListener(this);
     }
     public void keyTyped(KeyEvent e) {
-
+        l1.setText("Key Typed");
+        l3.setText(new Date(e.getWhen())+"");
     }
     public void keyPressed(KeyEvent e) {
             l.setText("Key Pressed");
+            l2.setText("");
     }
     public void keyReleased(KeyEvent e) {
-            l1.setText("Key Released");
-            l3.setText(new Date(e.getWhen())+"");
+           l2.setText("Key Released");
+           l.setText("");
+           l3.setText("");
+           l1.setText("");
     }
 }
 
