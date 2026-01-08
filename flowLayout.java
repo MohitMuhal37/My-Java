@@ -7,18 +7,19 @@ class FlowOut extends Frame
     public FlowOut()
     {
     super("Flow Layout");
+    setLayout(new GridLayout(3,2));
     b = new Button("One");
     b1 = new Button("Two");
     b2 = new Button("Three");
     b3 = new Button("Four");
     b4 = new Button("Five");
     b5 = new Button("Six");
-
-    FlowLayout f = new FlowLayout();
-    f.setAlignment(FlowLayout.RIGHT);
-    f.setHgap(50);
-
-    setLayout(f);
+//
+//    FlowLayout f = new FlowLayout();
+//    f.setAlignment(FlowLayout.RIGHT);
+//    f.setHgap(50);
+//
+//    setLayout(f);
 
     add(b,BorderLayout.NORTH);
     add(b1,BorderLayout.EAST);
