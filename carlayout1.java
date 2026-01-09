@@ -1,6 +1,8 @@
 import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
-class CardLayouts extends Frame
+class CardLayouts extends Frame implements ItemListener
 {
     Button b1, b2, b3;
 
@@ -13,6 +15,7 @@ class CardLayouts extends Frame
     Panel mainp;
 
     Checkbox c1,c2;
+    CardLayout cl;
     CardLayouts()
     {
         super("Cards Layouts");
@@ -44,14 +47,31 @@ class CardLayouts extends Frame
         p2.add(t3);
 
         mainp = new Panel();
-        mainp.setLayout(new CardLayout());
+        cl = new CardLayout();
+        mainp.setLayout(cl);
 
+        mainp.add("One",p1);
+        mainp.add("Two",p2);
 
+        add(cp,BorderLayout.NORTH);
+        add(mainp,BorderLayout.CENTER);
+        c1.addItemListener(this);
+        c2.addItemListener(this);
+    }
+
+    public void itemStateChanged(ItemEvent e)
+    {
+        if(c1.getState())
+            cl.first(mainp);
+        else
+            cl.last(cp);
     }
 }
 
-public class cardLayout {
+public class carlayout1 {
     public static void main(String[] args){
-
+    CardLayouts cl = new CardLayouts();
+    cl.setSize(400,400);
+    cl.setVisible(true);
     }
 }
