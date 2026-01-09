@@ -10,7 +10,7 @@ class CardLayouts extends Frame
     Panel p2;
     Panel cp;
 
-    Panel mianp;
+    Panel mainp;
 
     Checkbox c1,c2;
     CardLayouts()
@@ -18,8 +18,8 @@ class CardLayouts extends Frame
         super("Cards Layouts");
 
         CheckboxGroup cgp = new CheckboxGroup();
-        c1 = new Checkbox("One",cgp);
-        c2 = new Checkbox("Two",cgp);
+        c1 = new Checkbox("One",cgp,true);
+        c2 = new Checkbox("Two",cgp,false);
 
         b1 = new Button("One");
         b2 = new Button("Two");
@@ -32,6 +32,20 @@ class CardLayouts extends Frame
         cp = new Panel();
         cp.add(c1);
         cp.add(c2);
+
+        p1 = new Panel();
+        p1.add(b1);
+        p1.add(b2);
+        p1.add(b3);
+
+        p2 = new Panel();
+        p2.add(t1);
+        p2.add(t2);
+        p2.add(t3);
+
+        mainp = new Panel();
+        mainp.setLayout(new CardLayout());
+
 
     }
 }
