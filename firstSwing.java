@@ -17,6 +17,7 @@ class FirstSwings extends JFrame implements ActionListener
         add(l);
         add(b);
         b.addActionListener(this);
+        getRootPane().setDefaultButton(b);
     }
 
     public void actionPerformed(ActionEvent e)
