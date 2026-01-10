@@ -17,6 +17,8 @@ class FirstSwings extends JFrame implements ActionListener
         add(l);
         add(b);
         b.addActionListener(this);
+        b.setIcon(new ImageIcon());
+        l.setToolTipText("counter");
         getRootPane().setDefaultButton(b);
     }
 
