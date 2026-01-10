@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-class FirstSwings extends JFrame
+class FirstSwings extends JFrame implements ActionListener
 {
     JLabel l;
     JButton b;
@@ -14,6 +16,13 @@ class FirstSwings extends JFrame
         setLayout(new FlowLayout());
         add(l);
         add(b);
+        b.addActionListener(this);
+    }
+
+    public void actionPerformed(ActionEvent e)
+    {
+        count++;
+        l.setText("Clicked "+count+ " Times");
     }
 }
 
