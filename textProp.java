@@ -28,8 +28,8 @@ public class textProp extends Application implements EventHandler<ActionEvent>
         HBox hb = new HBox();
         hb.getChildren().add(t);
         r1 = new RadioButton("Red");
-        r2 = new RadioButton("Green");
-        r3 = new RadioButton("Blue");
+        r2 = new RadioButton("Blue");
+        r3 = new RadioButton("Green");
         ToggleGroup td = new ToggleGroup();
         r1.setToggleGroup(td);
         r2.setToggleGroup(td);
@@ -54,6 +54,13 @@ public class textProp extends Application implements EventHandler<ActionEvent>
         vb.setSpacing(15);
         vb.setPadding(new Insets(10,10,10,10));
 
+        r1.setOnAction(this);
+        r2.setOnAction(this);
+        r3.setOnAction(this);
+        c1.setOnAction(this);
+        c2.setOnAction(this);
+        c3.setOnAction(this);
+        cp.setOnAction(this);
         Scene sc = new Scene(vb,500,500);
         stage.setScene(sc);
         stage.show();
@@ -65,9 +72,9 @@ public class textProp extends Application implements EventHandler<ActionEvent>
         if(r1.isSelected())
             t.setFill(Paint.valueOf("RED"));
         if(r2.isSelected())
-            t.setFill(Paint.valueOf("Green"));
-        if(r2.isSelected())
-            t.setFill(Paint.valueOf("Blue"));
+            t.setFill(Paint.valueOf("BLUE"));
+        if(r3.isSelected())
+            t.setFill(Paint.valueOf("GREEN"));
 
         if(c2.isSelected())
           fw = FontWeight.BOLD;
