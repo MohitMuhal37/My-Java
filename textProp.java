@@ -1,4 +1,6 @@
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
@@ -6,11 +8,15 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Paint;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import javafx.scene.text.Text;
 import javafx.scene.control.CheckBox;
 
-public class textProp extends Application
+public class textProp extends Application implements EventHandler<ActionEvent>
 {
     Text t;
     RadioButton r1, r2, r3;
@@ -38,17 +44,37 @@ public class textProp extends Application
         c3 = new CheckBox("Italic");
         HBox hb2 = new HBox();
         hb2.getChildren().addAll(c1,c2,c3);
-        hb1.setSpacing(15);
-        hb1.setPadding(new Insets(10,10,10,10));
+        hb2.setSpacing(15);
+        hb2.setPadding(new Insets(10,10,10,10));
 
         cp = new ChoiceBox<>();
-        cp.getItems().addAll(10,20,30,50);
+        cp.getItems().addAll(10,20,30,40,50);
         VBox vb = new VBox();
         vb.getChildren().addAll(hb,hb1,hb2,cp);
+        vb.setSpacing(15);
+        vb.setPadding(new Insets(10,10,10,10));
 
         Scene sc = new Scene(vb,500,500);
         stage.setScene(sc);
         stage.show();
+    }
+
+    public void handle(ActionEvent e){
+        FontWeight fw = FontWeight.NORMAL;
+        FontPosture fp = FontPosture.REGULAR;
+        if(r1.isSelected())
+            t.setFill(Paint.valueOf("RED"));
+        if(r2.isSelected())
+            t.setFill(Paint.valueOf("Green"));
+        if(r2.isSelected())
+            t.setFill(Paint.valueOf("Blue"));
+
+        if(c2.isSelected())
+          fw = FontWeight.BOLD;
+        if(c3.isSelected())
+           fp = FontPosture.ITALIC;
+
+        t.setFont(Font.font("Times New Roma",fw,fp,cp.getValue()));
     }
     public static void main(String[] args)
     {
