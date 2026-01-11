@@ -15,7 +15,6 @@ public class textAreaSlider extends Application
     {
         ta = new TextArea();
         ta.setPrefColumnCount(100);
-        ta.setPrefRowCount(50);
         sl = new Slider(10,100,10);
         VBox vb = new VBox();
         sl.setMajorTickUnit(5);
