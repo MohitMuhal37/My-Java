@@ -10,7 +10,10 @@ public class multiplyMatrix {
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                arr2[i][j] = arr[i][j] * arr1[i][j];
+                arr2[i][j] = 0;
+                for(int k = 0; k < 3; k++){
+                    arr2[i][j] += arr[i][k] * arr1[k][j];
+                }
             }
         }
 
